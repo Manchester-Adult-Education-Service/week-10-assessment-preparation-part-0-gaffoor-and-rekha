@@ -110,9 +110,14 @@ print()
 # 5. Print what they chose: print(f"You selected: {choice}")
 #
 # Write your code below:
-
-
-
+print()
+choice="0"
+while choice != "3":
+    print(f"1. Add task")
+    print(f"2. View all tasks")
+    print(f"3. Exit")
+    print()
+    choice = input("Select an option: ")
 
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
