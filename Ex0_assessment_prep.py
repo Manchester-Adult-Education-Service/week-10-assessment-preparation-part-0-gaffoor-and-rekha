@@ -155,15 +155,20 @@ print()
 print()
 choice="0"
 while choice != "1" and choice != "2" and choice != "3":
-    print("ERROR: Invalid choice")
-    print()
-    print("1. Add task")
-    print("2. View all tasks")
-    print("3. Exit")
-    print()
-    choice = input("Select an option: ")
-    print()
-
+        print()
+        print("1. Add task")
+        print("2. View all tasks")
+        print("3. Exit")
+        print()
+        choice = input("Select an option: ")
+        print()
+        if choice != 1:
+            task_name = input("Enter task name: ")
+            priority = input("Enter priority (High/Medium/Low): ")
+            print()
+            print("Task added successfully")
+            print()
+            print("ERROR: Invalid choice")
 
 
 
