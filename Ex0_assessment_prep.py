@@ -111,13 +111,13 @@ print()
 #
 # Write your code below:
 print()
-choice="0"
-while choice != "3":
-    print(f"1. Add task")
-    print(f"2. View all tasks")
-    print(f"3. Exit")
-    print()
-    choice = input("Select an option: ")
+# choice="0"
+# while choice != "3":
+#     print(f"1. Add task")
+#     print(f"2. View all tasks")
+#     print(f"3. Exit")
+#     print()
+#     choice = input("Select an option: ")
 
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
@@ -154,12 +154,15 @@ while choice != "3":
 # Write your code (modify your Task 3 code):
 print()
 choice="0"
-while choice != "3":
-    print(f"1. Add task")
-    print(f"2. View all tasks")
-    print(f"3. Exit")
+while choice != "1" and choice != "2" and choice != "3":
+    print("ERROR: Invalid choice")
+    print()
+    print("1. Add task")
+    print("2. View all tasks")
+    print("3. Exit")
     print()
     choice = input("Select an option: ")
+    print()
 
 
 
