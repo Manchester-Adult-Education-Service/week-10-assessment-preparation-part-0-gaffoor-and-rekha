@@ -152,6 +152,14 @@ while choice != "3":
 # 5. Test it - the menu should repeat until you type "3"
 #
 # Write your code (modify your Task 3 code):
+print()
+choice="0"
+while choice != "3":
+    print(f"1. Add task")
+    print(f"2. View all tasks")
+    print(f"3. Exit")
+    print()
+    choice = input("Select an option: ")
 
 
 
