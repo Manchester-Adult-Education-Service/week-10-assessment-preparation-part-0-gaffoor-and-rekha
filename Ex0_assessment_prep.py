@@ -201,6 +201,9 @@ while choice != "3":
                     print(f"Status: {task['status']}")
                     print("---------------------------------------")
                print()
+        elif choice == "3":
+            print("Thank you for using the Task Manager")
+            print("Goodbye")    
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
 # -------------------------------------------
