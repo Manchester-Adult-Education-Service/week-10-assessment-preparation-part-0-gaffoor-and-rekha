@@ -188,7 +188,19 @@ while choice != "3":
             tasks.append(task)
             print("Task added successfully")
             print()
-
+        elif choice == "2":
+          if len(tasks) == 0:
+               print("No tasks recorded yet")
+               print()
+          else:
+               print("All tasks:")
+               print()
+               for task in tasks:
+                    print(f"Name: {task['name']}")
+                    print(f"Priority: {task['priority']}")
+                    print(f"Status: {task['status']}")
+                    print("---------------------------------------")
+               print()
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
 # -------------------------------------------
