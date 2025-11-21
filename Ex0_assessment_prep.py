@@ -170,7 +170,12 @@ while choice != "3":
             print("3. Exit")
             print()
             choice = input("Select an option: ") 
-
+        if choice == "1":
+            task_name = input("Enter task name: ")
+            priority = input("Enter priority (High/Medium/Low): ")
+            print()
+            print("Task added successfully")
+            print()
 
 
 # -------------------------------------------
