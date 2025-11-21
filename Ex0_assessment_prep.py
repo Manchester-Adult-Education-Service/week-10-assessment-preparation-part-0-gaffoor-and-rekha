@@ -154,20 +154,22 @@ print()
 # Write your code (modify your Task 3 code):
 print()
 choice = "0"
-while choice != "3":
+while choice != "4":
         print()
         print("1. Add task")
         print("2. View all tasks")
-        print("3. Exit")
+        print("3. Search for tasks")
+        print("4. Exit")
         print()
         choice = input("Select an option: ")
         print()
-        while choice != "1" and choice != "2" and choice != "3":
+        while choice != "1" and choice != "2" and choice != "3" and choice != "4":
             print("ERROR: Invalid choice")
             print()
             print("1. Add task")
             print("2. View all tasks")
-            print("3. Exit")
+            print("3. Search for tasks")
+            print("4. Exit")
             print()
             choice = input("Select an option: ") 
         if choice == "1":
@@ -192,7 +194,30 @@ while choice != "3":
           if len(tasks) == 0:
                print("No tasks recorded yet")
                print()
-          else:
+        elif choice == "3":
+               if len(tasks) == 0:
+                    print("No tasks to search")
+                    print()
+               else:
+                    search_name = input("Enter task name to search for: ")
+                    found = False
+                    for task in tasks:
+                         if task["name"] == search_name:
+                              print()
+                              print("Task found:")
+                              print(f"Name: {task['name']}")
+                              print(f"Priority: {task['priority']}")
+                              print(f"Status: {task['status']}")
+                              print()
+                              found = True
+                    if found == False:
+                      print()
+                      print("No matching tasks found")
+                      print()
+        elif choice == "4":
+            print("Thank you for using the Task Manager")
+            print("Goodbye")    
+        else:
                print("All tasks:")
                print()
                for task in tasks:
@@ -201,9 +226,7 @@ while choice != "3":
                     print(f"Status: {task['status']}")
                     print("---------------------------------------")
                print()
-        elif choice == "3":
-            print("Thank you for using the Task Manager")
-            print("Goodbye")    
+
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
 # -------------------------------------------
