@@ -172,11 +172,16 @@ while choice != "3":
             choice = input("Select an option: ") 
         if choice == "1":
             task_name = input("Enter task name: ")
+            while task_name == "":
+                 print("ERROR: Task name cannot be blank")
+                 task_name = input("Enter task name: ")
             priority = input("Enter priority (High/Medium/Low): ")
+            while priority == "":
+                 print("ERROR: Priority cannot be blank")
+                 priority = input("Enter priority (High/Medium/Low): ")              
             print()
             print("Task added successfully")
             print()
-
 
 # -------------------------------------------
 # SWAP COMPUTERS (Don't swap computers if working alone)
