@@ -44,7 +44,7 @@
 #
 # Write your code below:
 tasks = []
-
+print(tasks)
 
 
 # -------------------------------------------
@@ -111,7 +111,7 @@ print()
 #
 # Write your code below:
 print()
-# choice="0"
+# choice ="0"
 # while choice != "3":
 #     print(f"1. Add task")
 #     print(f"2. View all tasks")
@@ -153,8 +153,8 @@ print()
 #
 # Write your code (modify your Task 3 code):
 print()
-choice="0"
-while choice != "1" and choice != "2" and choice != "3":
+choice = "0"
+while choice != "3":
         print()
         print("1. Add task")
         print("2. View all tasks")
@@ -162,13 +162,14 @@ while choice != "1" and choice != "2" and choice != "3":
         print()
         choice = input("Select an option: ")
         print()
-        if choice != 1:
-            task_name = input("Enter task name: ")
-            priority = input("Enter priority (High/Medium/Low): ")
-            print()
-            print("Task added successfully")
-            print()
+        while choice != "1" and choice != "2" and choice != "3":
             print("ERROR: Invalid choice")
+            print()
+            print("1. Add task")
+            print("2. View all tasks")
+            print("3. Exit")
+            print()
+            choice = input("Select an option: ") 
 
 
 
