@@ -180,6 +180,12 @@ while choice != "3":
                  print("ERROR: Priority cannot be blank")
                  priority = input("Enter priority (High/Medium/Low): ")              
             print()
+            task = {
+                 "name": task_name,
+                 "priority": priority,
+                 "status": "Not started"
+            }
+            tasks.append(task)
             print("Task added successfully")
             print()
 
