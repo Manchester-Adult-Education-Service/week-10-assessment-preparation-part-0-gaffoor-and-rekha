@@ -154,22 +154,24 @@ print()
 # Write your code (modify your Task 3 code):
 print()
 choice = "0"
-while choice != "4":
+while choice != "5":
         print()
         print("1. Add task")
         print("2. View all tasks")
         print("3. Search for tasks")
-        print("4. Exit")
+        print("4. View statistics")
+        print("5. Exit")
         print()
         choice = input("Select an option: ")
         print()
-        while choice != "1" and choice != "2" and choice != "3" and choice != "4":
+        while choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5":
             print("ERROR: Invalid choice")
             print()
             print("1. Add task")
             print("2. View all tasks")
             print("3. Search for tasks")
-            print("4. Exit")
+            print("4. View statistics")
+            print("5. Exit")
             print()
             choice = input("Select an option: ") 
         if choice == "1":
@@ -215,6 +217,27 @@ while choice != "4":
                       print("No matching tasks found")
                       print()
         elif choice == "4":
+               if len(tasks) == 0:
+                    print("No tasks to calculate statistics")
+                    print()
+               else:
+                    high_count = 0
+                    medium_count = 0
+                    low_count = 0
+                    for task in tasks:
+                        if task["priority"] == "High":
+                            high_count = high_count + 1
+                        elif task["priority"] == "Medium":
+                            medium_count = medium_count + 1
+                        elif task["priority"] == "Low":
+                            low_count = low_count + 1
+                    print("Task Statistics:")
+                    print(f"Total tasks: {len(tasks)}")
+                    print(f"High priority: {high_count}")
+                    print(f"Medium priority: {medium_count}")
+                    print(f"Low priority: {low_count}")
+                    print()
+        elif choice == "5":
             print("Thank you for using the Task Manager")
             print("Goodbye")    
         else:
